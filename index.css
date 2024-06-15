@@ -1,0 +1,152 @@
+:root {
+    primary-color: black
+
+    }
+    /*set up the style of the body*/
+    body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: rgb(142, 210, 246);
+        background-color:rgb(39, 39, 40);
+    }
+    img{
+        border: 0px;
+        border-color: aqua;
+        height 50px
+        /*border-radius: 50px 50px 50px 50px;*/
+    }
+    .text-overlay {
+        position: absolute;
+        top: 10%;
+        left: 55%;
+        right: 0%;
+        transform: translate(-0%, -50%);
+        text-align: center;
+        color: white; /* Adjust text color */
+        background-color: back; /* for text */
+        padding: 79px;
+        border-radius: 30px;
+        
+        
+      }
+      .text-overlay1 {
+        position: absolute;
+        top: 60%;
+        left: 25%;
+        right: 30%;
+        transform: translate(-0%, -50%);
+        text-align: center;
+        color: rgb(59, 58, 63); /* Adjust text color */
+        font-variant: ;
+        font-size: 46px;
+        background-color: ;
+        padding: 79px;
+        border-radius: 30px;
+
+      }
+    
+
+    header { 
+        background-color:rgb(39, 39, 40);
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 6px;
+        color: rgb(142, 210, 246);
+    
+    }
+    .coder-text {
+        font-size: medium;
+    
+    }
+    
+    
+    .name {font-size: 34px;
+    color: rgb(224, 232, 236);}
+    
+    
+    .nav-items{
+        color: rgb(148, 198, 241);
+    }
+    
+    .info {
+        color: blueviolet;
+    }
+    .info p {
+        margin: 5px 0;
+    
+    }
+    /* style the top navigation */
+    .topnav {
+      
+        overflow: hidden;
+      }
+      
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        float: inline-end;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 32px;
+        border: 10px;
+        border-radius: 10px 10px 10px 10px;
+        
+      }
+      
+      /* Change the color of links on hover */
+      .topnav a:hover {
+        background-color: #5f6263;
+        color: black;
+      }
+      
+      /* Add a color to the active/current link */
+      .topnav a.active {
+        background-color: rgb(175, 185, 186);
+        color: rgb(4, 11, 15);
+      }
+      /*style the footer to fit with the header*/
+    
+    /* style the main */
+    main {
+        display: flex;
+        flex-wrap: flex;
+        justify-content: center;
+        gap: 32px;
+        background-color: background-color:rgb(26, 78, 78);
+    }
+    article {
+        background-color:black;
+        border-radius: 16px;
+        overflow: hidden;
+        text-align: center;
+        margin: 20px 0;
+    
+    
+    }
+      footer{
+        background-color: black;
+        justify-content: space-around;
+       text-align: center;
+       padding: 16px;
+    }
+    /*style the social media icons*/
+    
+    .social-media {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .social-media a i {font-size: 24px;
+    color: rgb(112, 188, 192);
+    }
+    
+    .logo-name a img {
+        height: 100%;
+        width: 100%;
+        padding: 500;
+        margin: 0;
+    }
+   
