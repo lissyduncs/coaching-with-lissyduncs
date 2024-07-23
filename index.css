@@ -39,11 +39,12 @@
         right: 30%;
         transform: translate(-0%, -50%);
         text-align: center;
-        color: rgb(59, 58, 63); /* Adjust text color */
+        color: rgb(196, 188, 226); /* Adjust text color */
+    
         font-variant: ;
         font-size: 46px;
         background-color: ;
-        padding: 79px;
+        padding: 59px;
         border-radius: 30px;
 
       }
@@ -68,7 +69,7 @@
     
     
     .nav-items{
-        color: rgb(148, 198, 241);
+        color: rgb(204, 179, 238);
     }
     
     .info {
@@ -87,7 +88,7 @@
       /* Style the links inside the navigation bar */
       .topnav a {
         float: inline-end;
-        color: black;
+        color: rgb(207, 189, 233);
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -99,13 +100,13 @@
       
       /* Change the color of links on hover */
       .topnav a:hover {
-        background-color: #5f6263;
+        background-color: #b193ce;
         color: black;
       }
       
       /* Add a color to the active/current link */
       .topnav a.active {
-        background-color: rgb(175, 185, 186);
+        background-color: rgb(154, 133, 169);
         color: rgb(4, 11, 15);
       }
       /*style the footer to fit with the header*/
@@ -139,7 +140,7 @@
         display: flex;
         justify-content: space-evenly;
     }
-    .social-media a i {font-size: 24px;
+    .social-media a i {font-size: 46px;
     color: rgb(112, 188, 192);
     }
     
