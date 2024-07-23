@@ -1,160 +1,118 @@
-:root {
-    primary-color: black
+/* Base styles for mobile-first design */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(142, 210, 246);
+  background-color: rgb(39, 39, 40);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-    }
-    /*set up the style of the body*/
-    body {
-        margin: 0;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        color: rgb(142, 210, 246);
-        background-color:rgb(39, 39, 40);
-    }
-   
-    .darken {
-      background-image: 
-        linear-gradient(
-          rgba(0, 0, 0, 0.5),
-          rgba(0, 0, 0, 0.5)
-        ),
-        url(shoes.jpg);
-    }
-    .text-overlay {
-        position: absolute;
-        top: 10%;
-        left: 55%;
-        right: 0%;
-        transform: translate(-0%, -50%);
-        text-align: center;
-        color: white; /* Adjust text color */
-        background-color: back; /* for text */
-        padding: 79px;
-        border-radius: 40px;
-        
-        
-        
-      }
-      .text-overlay1 {
-        position: absolute;
-        top: 60%;
-        left: 25%;
-        right: 30%;
-        transform: translate(-0%, -50%);
-        text-align: center;
-        color: rgb(173, 164, 206); /* Adjust text color */
-    
-        font-variant: ;
-        font-size: 46px;
-        background-color: ;
-        padding: 9px;
-        border-radius: 0px;
-        text-shadow:  5px 0 black;
+header {
+  position: relative;
+  height: 100vh;
+}
 
-      }
-      .small-text {
-        font-size: 36px; /* Adjust the size as needed */
-      }
+.logo-name {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('runner.jpg') no-repeat center center/cover;
+}
 
-    header { 
-        background-color:rgb(39, 39, 40);
-        text-align: center;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        padding: 6px;
-        color: rgb(142, 210, 246);
-    
-    }
-    .coder-text {
-        font-size: medium;
-    
-    }
-    
-    
-    .name {font-size: 34px;
-    color: rgb(224, 232, 236);}
-    
-    
-    .nav-items{
-        color: rgb(204, 179, 238);
-    }
-    
-    .info {
-        color: blueviolet;
-    }
-    .info p {
-        margin: 5px 0;
-    
-    }
-    /* style the top navigation */
-    .topnav {
-      
-        overflow: hidden;
-      }
-      
-      /* Style the links inside the navigation bar */
-      .topnav a {
-        float: inline-end;
-        color: rgb(173, 164, 206);
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 32px;
-        border: 10px;
-        border-radius: 10px 10px 10px 10px;
-        
-      }
-      
-      /* Change the color of links on hover */
-      .topnav a:hover {
-        background-color: #a182bd;
-        color: black;
-      }
-      
-      /* Add a color to the active/current link */
-      .topnav a.active {
-        background-color: rgb(174, 150, 191);
-        color: rgb(4, 11, 15);
-      }
-      /*style the footer to fit with the header*/
-    
-    /* style the main */
-    main {
-        display: flex;
-        flex-wrap: flex;
-        justify-content: center;
-        gap: 32px;
-        background-color: background-color:rgb(26, 78, 78);
-    }
-    article {
-        background-color:black;
-        border-radius: 16px;
-        overflow: hidden;
-        text-align: center;
-        margin: 20px 0;
-    
-    
-    }
-      footer{
-        background-color: black;
-        justify-content: space-around;
-       text-align: center;
-       padding: 16px;
-    }
-    /*style the social media icons*/
-    
-    .social-media {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .social-media a i {font-size: 46px;
-    color: rgb(192, 151, 226);
-    }
-    
-    .logo-name a img {
-        height: 100%;
-        width: 100%;
-        padding: 500;
-        margin: 0;
-    }
-   
+.text-overlay, .text-overlay1 {
+  position: absolute;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+.text-overlay {
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-overlay1 {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(173, 164, 206);
+  font-size: 46px;
+  text-shadow: 2px 0 black;
+}
+
+.small-text {
+  font-size: 36px;
+}
+
+.topnav {
+  display: none; /* Hide the navigation links by default */
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.topnav a {
+  color: rgb(173, 164, 206);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 32px;
+  border-radius: 10px;
+}
+
+.topnav a:hover {
+  background-color: #a182bd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(174, 150, 191);
+  color: rgb(4, 11, 15);
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+  .text-overlay, .text-overlay1 {
+      padding: 40px;
+  }
+
+  .topnav {
+      display: flex; /* Show the navigation links for larger screens */
+      flex-direction: row;
+  }
+
+  .topnav a {
+      font-size: 24px;
+  }
+
+  .small-text {
+      font-size: 24px;
+  }
+
+  header, footer {
+      padding: 32px;
+  }
+
+  .hamburger {
+      display: none; /* Hide the hamburger button for larger screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .topnav {
+      display: none; /* Hide the navigation links by default for small screens */
+  }
+}
