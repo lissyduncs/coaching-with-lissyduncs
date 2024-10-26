@@ -33,16 +33,16 @@ body {
 }
 
 .topnav a.active {
-    color: rgb(4, 11, 15);
-    background-color: rgb(174, 150, 191);
+    color: rgb(237, 230, 241);
+    background-color: rgb(152, 153, 207);
     padding: 10px;
     border-radius: 10px;
 }
 
 .topnav a:hover {
-    color: black;
-    background-color: transparent;
-}
+    background-color: #8b759f;
+    color: rgb(237, 230, 241);
+  }
 
 /* Contact form container */
 .contact-container {
@@ -65,7 +65,7 @@ header {
 .contact-container h1 {
     font-size: 32px;
     margin-bottom: 20px;
-    color: rgb(173, 164, 206);
+    color: rgb(125, 116, 170); /* Light blue */
 }
 
 .contact-container p {
@@ -102,7 +102,7 @@ header {
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border: 2px solid rgb(173, 164, 206);
+  color: rgb(125, 116, 170); /* Light blue */
 }
 
 .contact-form textarea {
@@ -129,7 +129,7 @@ header {
 footer {
     margin-top: 30px;
     padding: 20px;
-    background-color: #000;
+    background-color:transparent;
     color: #fff;
     text-align: center;
 }
@@ -173,5 +173,9 @@ footer .social-media a:hover {
     .submit-btn {
         font-size: 14px;
         padding: 10px 12px;
+        background-color: #8b759f;
+        color: #ccc;
+        display: inline-block;
+        
     }
 }

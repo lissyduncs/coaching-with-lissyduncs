@@ -1,148 +1,143 @@
-
-/* style the container */
-.container {
-    border: 2px solid #000;
-    padding: 20px;
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    background-color: rgb(152, 192, 194);
-   
+/* Reset basic styling */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    
-    
-}
-
-/* style the main */
-main {
-    display: flex;
-    flex-wrap: flex;
-    justify-content: center;
-    gap: 32px;
-}
-article {
-    background-color: var(--secondary-color);
-    border-radius: 16px;
-    overflow: hidden;
-    text-align: center;
-    margin: 20px 0;
-
-
-}
-
-
+/* Apply full-screen background */
 body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: rgb(5, 63, 94);
-    background-color: rgb(26, 78, 78);
-}
-/* style the header */
-
-header { 
-    background-color:rgb(26, 78, 78);
-    text-align: center;
-    padding: 16px;
-    color: rgb(142, 210, 246);
-    font-size: 38px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+  background: url('../runner.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
-/* style the footer */
-footer{
-    background-color: rgb(26, 78, 78);
-    justify-content: space-around;
-   text-align: center;
-   padding: 16px;
-}
-/* style the social media icons */
-.social-media {
-    display: flex;
-    justify-content: space-evenly;
-}
-.social-media a i {font-size: 24px;
-color: rgb(112, 188, 192);
-
-/* style the fonts  */
-}
-h3{
-    font-size: 28px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
-}
-h2{
-  font-size: 36px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
-
-}
-
-/* style the top navigation */
+/* Ensure topnav matches previous pages */
 .topnav {
-    
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: transparent; /* No background */
+  padding: 10px;
+}
+
+.topnav a {
+  color: rgb(173, 164, 206);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.topnav a.active {
+  color: rgb(237, 230, 241);
+  background-color: rgb(152, 153, 207);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.topnav a:hover {
+  background-color: #8b759f;
+  color: rgb(237, 230, 241);
+}
+
+/* About Me container */
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  margin-top: 50px;
+}
+
+/* About Me Image */
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 250px;
+  border-radius: 10%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About Me Content */
+.about-content {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.about-content h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: rgb(125, 116, 170); /* Light blue */
+}
+
+.about-content p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-content a {
+  color: rgb(173, 164, 206);
+  text-decoration: none;
+}
+
+.about-content a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+footer .social-media a {
+  color: #cfb8f1;
+  margin: 0 15px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+footer .social-media a:hover {
+  color: rgb(134, 120, 185); /* Light blue hover */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .about-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
   }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: inline-end;
-    color: rgb(142, 210, 246);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    border: 10px;
-    border-radius: 10px 10px 10px 10px;
-    
+
+  .about-image {
+      margin-bottom: 20px;
   }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #b0e4f0;
-    color: black;
+
+  .about-content {
+      padding-left: 0;
   }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: rgb(142, 210, 246);
-    color: rgb(5, 63, 94);
+
+  .about-content h1 {
+      font-size: 32px;
   }
-  /* styles for desktop devices */
-@media only screen and (min-width: 992px) {
-    body {
+
+  .about-content p {
       font-size: 16px;
-      width: 80%;
-      margin: auto;
-    }
   }
-  
-  /* styles for tablet devices */
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    body {
-      font-size: 14px;
-      width: 90%;
-      margin: auto;
-    }
-  }
-  
-  /* styles for mobile devices */
-  @media only screen and (max-width: 767px) {
-    body {
-      font-size: 12px;
-      width: 100%;
-      margin: 0;
-    }
-  }
-  
+}
