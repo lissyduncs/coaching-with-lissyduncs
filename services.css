@@ -34,13 +34,13 @@ body {
 /* Add the highlighted background and color for the current active page */
 .topnav a.active {
   color: rgb(237, 230, 241);
-  background-color: rgb(152, 153, 207);
+  background-color: rgb(174, 150, 191); /* Light purple background for active item */
   padding: 10px;
   border-radius: 10px;
 }
 
 .topnav a:hover {
-  background-color: #8b759f;
+  background-color: rgb(152, 153, 207);
   color: rgb(237, 230, 241);
 }
 
@@ -64,7 +64,7 @@ header {
 .services-container h1 {
   font-size: 42px;
   margin-bottom: 30px;
-  color: rgb(125, 116, 170); /* Light blue */
+  color: rgb(173, 164, 206); /* Light blue text */
 }
 
 .service-box {
@@ -80,7 +80,7 @@ header {
 .service-box h2 {
   font-size: 28px;
   margin-bottom: 10px;
-  color: rgb(125, 116, 170); /* Light blue */
+  color: rgb(173, 164, 206); /* Light blue heading */
 }
 
 .service-box p {
@@ -111,6 +111,14 @@ footer .social-media a:hover {
 
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
+  .topnav {
+    flex-direction: column; /* Stack the navigation links vertically */
+}
+
+.topnav a {
+    font-size: 20px; /* Smaller font size for mobile */
+    padding: 5px 0; /* Adjust padding for mobile */
+}
   .services-container {
       width: 90%;
       padding: 20px;

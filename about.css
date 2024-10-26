@@ -19,6 +19,7 @@ body {
   justify-content: center;
   background-color: transparent; /* No background */
   padding: 10px;
+  margin-bottom: 0;
 }
 
 .topnav a {
@@ -119,6 +120,14 @@ footer .social-media a:hover {
 
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
+  .topnav {
+    flex-direction: column; /* Stack the navigation links vertically */
+}
+
+.topnav a {
+    font-size: 20px; /* Smaller font size for mobile */
+    padding: 8px 0; /* Adjust padding for mobile */
+}
   .about-container {
       flex-direction: column;
       text-align: center;
