@@ -1,211 +1,134 @@
-
-main {
-  display: flex;
-  flex-wrap: flex;
-  justify-content: center;
-  gap: 32px;
-  margin: 20px 20px
-}
-/* style the top navigation */
-.topnav {
-  
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: right;
-  color: rgb(142, 210, 246);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  border: 10px;
-  border-radius: 10px 10px 10px 10px;
-  
-
-}
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #b0e4f0;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: rgb(142, 210, 246);
-  color: rgb(5, 63, 94);}
-   /* make the header fit with the rest of the site*/
-header { 
-      background-color:rgb(26, 78, 78);
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      text-align: center;
-      font-size: 36px;
-      padding: 16px;
-      color: rgb(142, 210, 246);
-      margin-bottom: 24px;
-  
-  }
-article {
-  /* background-color: var(--secondary-color);
-  border-radius: 16px;
-  overflow: hidden;
-  text-align: center;
-  margin: 20px 0; */
-  /* display:flex;
-  width: 100%;
-  justify-content: space-between; */
-
-}
-section {
-  display:flex;
-  width: 100%;
-}
-/* style the containers */
-.container {
-  box-shadow: 10px 10px #5e7485;
-  background-color: rgb(213, 238, 249);
-  display:flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  border: 2px solid #0d0d0e;
-  padding: 20px;
-  width: 80%;
-  margin: 10px 10px;
-  text-align: center;
-  
- 
-
-/*style the image*/
-}
-.interests-image {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-radius: 16px;
-  border: 16px;
-  border-color: black;
-}
-body {
+/* Reset basic styling */
+html, body {
   margin: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color: rgb(5, 63, 94);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
-  background-color: rgb(152, 192, 194);
-  
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
 }
 
- /* make the footer pop*/
- footer{
-  background-color: rgb(26, 78, 78);
-  justify-content: space-around;
- text-align: center;
- padding: 16px;
-
- /*style the social media icons*/
-}
-.social-media {
-  display: flex;
-  justify-content: space-evenly;}
-
-  .social-media a i {font-size: 24px;
-      color: rgb(112, 188, 192);
-      }
-      
-      .logo-name a img {
-          height: 100%;
-          width: 100%;
-          padding: 0;
-          margin: 0;
-      }
-
-/* styles for desktop devices */
-@media only screen and (min-width: 992px) {
-  body {
-    font-size: 16px;
-    width: 80%;
-    margin: auto;
-  }
+/* Apply the full-screen background image */
+body {
+  background: url('../runner.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
-/* styles for tablet devices */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  body {
-    font-size: 14px;
-    width: 90%;
-    margin: auto;
-  }
-}
-
-/* styles for mobile devices */
-@media only screen and (max-width: 800px) {
-  header { 
-    background-color:rgb(26, 78, 78);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: 24px;
-    padding: 66px;
-    color: rgb(142, 210, 246);
-    
-
-}
-  body {
-    font-size: 10px;
-    width: 100%;
-    margin: 0;
-  }
-  .container{
-      width: 18%;
-      margin: 0; /* Center the container */
-      padding: 18px;
-      
-  }
-  .h2{ font-size: 65%;
-    width: 10%
-  ;}
-    /* style the top navigation */
+/* Ensure the topnav matches the contact page */
 .topnav {
-  
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: transparent; /* No background */
+  padding: 10px;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
-  float: right;
-  color: rgb(142, 210, 246);
+  color: rgb(173, 164, 206);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 13px;
-  border: 10px;
-  border-radius: 10px 10px 10px 10px;
-  
-
-}
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #b0e4f0;
-  color: black;
+  font-size: 24px;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-/* Add a color to the active/current link */
+/* Add the highlighted background and color for the current active page */
 .topnav a.active {
-  background-color: rgb(142, 210, 246);
-  color: rgb(5, 63, 94);}
-   /* make the header fit with the rest of the site*/
-header { 
-      background-color:rgb(26, 78, 78);
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      text-align: center;
+  color: rgb(4, 11, 15);
+  background-color: rgb(174, 150, 191); /* Light purple background for active item */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.topnav a:hover {
+  color: black;
+  background-color: transparent;
+}
+
+/* Services page container - starts right below the navigation */
+.services-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for contrast */
+}
+
+/* Ensure the services container starts directly below the nav */
+header {
+  height: auto;
+}
+
+/* Service section content styling */
+.services-container h1 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: rgb(173, 164, 206); /* Light blue text */
+}
+
+.service-box {
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  text-align: left;
+}
+
+.service-box h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: rgb(173, 164, 206); /* Light blue heading */
+}
+
+.service-box p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Footer styles */
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+footer .social-media a {
+  color: #fff;
+  margin: 0 15px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+footer .social-media a:hover {
+  color: rgb(173, 164, 206); /* Light blue hover effect on social icons */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .services-container {
+      width: 90%;
+      padding: 20px;
+  }
+
+  .services-container h1 {
+      font-size: 28px;
+  }
+
+  .service-box {
+      padding: 15px;
+  }
+
+  .service-box h2 {
       font-size: 22px;
-      padding: 16px;
-      color: rgb(142, 210, 246);
-      margin-bottom: 24px;
-  
+  }
+
+  .service-box p {
+      font-size: 16px;
   }
 }
-
