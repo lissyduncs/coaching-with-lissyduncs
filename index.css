@@ -118,3 +118,22 @@ header {
       display: none; /* Hide the navigation links by default for small screens */
   }
 }
+/* Footer styles */
+footer {
+  margin-top: 0px;
+  padding: 20px;
+  background-color: #000;
+  
+  text-align: center;
+}
+
+footer .social-media a {
+  color: #cfb8f1;
+  margin: 0 15px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+footer .social-media a:hover {
+  color: rgb(134, 120, 185); /* Light blue hover */
+}
