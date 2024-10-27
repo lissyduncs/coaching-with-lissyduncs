@@ -19,6 +19,8 @@ header {
   width: 100%;
   height: 100%;
   background: url('runner.jpg') no-repeat center center/cover;
+  /*opacity: 0.9; /* Adjust the value for desired transparency */
+
 }
 
 .text-overlay, .text-overlay1 {
@@ -26,7 +28,7 @@ header {
   text-align: center;
   color: white;
   padding: 20px;
-  border-radius: 40px;
+  border-radius: 30px;
 }
 
 .text-overlay {
@@ -36,7 +38,7 @@ header {
 }
 
 .text-overlay1 {
-  top: 60%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(173, 164, 206);
@@ -44,10 +46,20 @@ header {
   text-shadow: 2px 0 black;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
+.underline {
+  padding-top: 0; /* Start with this, then adjust */
+  margin-top: -80px; /* Adjust to move higher */
+}
 
 .small-text {
   font-size: 36px;
   font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  padding-top: 0; /* Start with this, then adjust */
+  margin-top: -30px; /* Adjust to move higher */
+  background-color: rgba(29, 26, 31, 0.4); /* White background with 70% opacity */
+  padding: 10px; 
+  border-radius: 20%;
 }
 
 .topnav {
