@@ -71,14 +71,14 @@ header {
 }
 
 .topnav a {
-  color: rgb(173, 164, 206);
+  color: rgb(55, 46, 92);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 22px;
   border-radius: 10px;
   font-family: 'Courier New', Courier, monospace;
-  font-weight:700 ;
+  font-weight:600 ;
 }
 
 .topnav a:hover {
