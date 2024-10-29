@@ -33,15 +33,15 @@ body {
 }
 
 .topnav a.active {
-  color: rgb(237, 230, 241);
   background-color: rgb(152, 153, 207);
+  color: rgb(237, 230, 241);
   padding: 10px;
   border-radius: 10px;
 }
 
 .topnav a:hover {
-  background-color: #8b759f;
-  color: rgb(237, 230, 241);
+  color: rgb(70, 54, 80);
+  background-color: #cfb8f1;
 }
 
 /* About Me container */
@@ -49,7 +49,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 40px 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
+  background-color: rgba(244, 238, 251, 0.8);
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -81,6 +81,7 @@ body {
   font-size: 42px;
   margin-bottom: 20px;
   color: rgb(125, 116, 170); /* Light blue */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .about-content p {
@@ -160,12 +161,15 @@ footer .social-media a:hover {
 
 .button-link {
   padding: 12px 20px;
-  background-color: rgb(125, 116, 170); /* Light blue */
+  background-color: rgb(142, 135, 192); /* Light blue */
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 18px;
   font-weight: bold;
+  box-shadow: 0 4px 6px rgba(165, 140, 201, 0.2); /* X-offset, Y-offset, blur-radius, color */
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   transition: background-color 0.3s ease;
 }
 

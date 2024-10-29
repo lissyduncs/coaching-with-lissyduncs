@@ -80,8 +80,8 @@ header {
 }
 
 .topnav a:hover {
-  background-color: #8b759f;
-  color: rgb(237, 230, 241);
+  color: rgb(70, 54, 80);
+  background-color: #cfb8f1;
 }
 
 .topnav a.active {
