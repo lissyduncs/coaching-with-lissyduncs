@@ -23,7 +23,10 @@ header {
   /*opacity: 0.9; /* Adjust the value for desired transparency */
 
 }
+.special-paragraph {
+  color: #cfb8f1;
 
+}
 .text-overlay, .text-overlay1 {
   position: absolute;
   text-align: center;
@@ -165,7 +168,7 @@ header {
 footer {
   margin-top: 0px;
   padding: 20px;
-  background-color: #000;
+  background-color: #2c2737;
   
   text-align: center;
 }
