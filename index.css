@@ -135,7 +135,7 @@ header {
     }
     .topnav {
       display: none; /* Hide the navigation links by default for small screens */
-    }
+      color: rgb(55, 46, 92);}
   
     .text-overlay 
     { }
