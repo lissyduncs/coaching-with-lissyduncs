@@ -90,8 +90,8 @@ body {
 }
 
 .about-content a {
-  color: rgb(173, 164, 206);
-  text-decoration: none;
+  color: rgb(111, 94, 173);
+  text-decoration-style: dotted;
 }
 
 .about-content a:hover {
@@ -149,4 +149,27 @@ footer .social-media a:hover {
   .about-content p {
       font-size: 16px;
   }
+}
+/* Button styles */
+.button-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center; /* Align buttons to the left */
+}
+
+.button-link {
+  padding: 12px 20px;
+  background-color: rgb(125, 116, 170); /* Light blue */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: rgb(173, 164, 206); /* Lighter blue on hover */
+  color: #fff;
 }

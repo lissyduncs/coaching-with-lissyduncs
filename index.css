@@ -52,7 +52,7 @@ header {
 }
 
 .small-text {
-  font-size: 36px;
+  font-size: 26px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   padding-top: 0; /* Start with this, then adjust */
@@ -74,7 +74,7 @@ header {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 22px;
   border-radius: 10px;
   font-family: 'Courier New', Courier, monospace;
 }
