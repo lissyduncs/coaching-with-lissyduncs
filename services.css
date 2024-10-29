@@ -137,4 +137,8 @@ footer .social-media a:hover {
   .service-box p {
       font-size: 16px;
   }
+    /* Adjust the background image position for mobile */
+    body {
+      background-position: center 50%; /* Move the background image lower */
+    }
 }
