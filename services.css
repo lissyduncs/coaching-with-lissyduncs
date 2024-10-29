@@ -9,7 +9,7 @@ html, body {
 
 /* Apply the full-screen background image */
 body {
-  background: url('../runner.jpg') no-repeat center center fixed;
+  background: url('../grouprun.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 

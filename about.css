@@ -9,7 +9,7 @@ html, body {
 
 /* Apply full-screen background */
 body {
-  background: url('../runner.jpg') no-repeat center center fixed;
+  background: url('../alburt.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -24,12 +24,13 @@ body {
 
 .topnav a {
   color: rgb(173, 164, 206);
-  text-align: center;
+  text-align:center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 24px;
   border-radius: 10px;
   font-family: 'Courier New', Courier, monospace;
+ 
 }
 
 .topnav a.active {
