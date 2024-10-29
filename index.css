@@ -130,18 +130,17 @@ header {
 @media (max-width: 767px) {
   @media (max-width: 767px) {
     header {
-      height: calc(100vh - 80px); /* Adjust height to fit the footer, e.g., 80px for footer height */
+      height: calc(90vh - 80px); /* Adjust height to fit the footer, e.g., 80px for footer height */
       background-color: #000;
     }
     .topnav {
       display: none; /* Hide the navigation links by default for small screens */
       color: rgb(55, 46, 92);}
   
-    .text-overlay 
-    { }
+    
     .text-overlay1 {
       /* Lower the text overlay on mobile */
-      top: 50%; /* Adjust this value as needed */
+      top: 60%; /* Adjust this value as needed */
     }
   
     .text-overlay1 {
@@ -150,6 +149,8 @@ header {
   
     .small-text {
       font-size: 22px; /* Reduce the small text size */
+      top: 90%; /* Adjust this value as needed */
+
     }
   
     .topnav a {
