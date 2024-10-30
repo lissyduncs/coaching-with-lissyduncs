@@ -60,11 +60,18 @@ header {
   height: auto;
 }
 
+
 /* Service section content styling */
 .services-container h1 {
   font-size: 42px;
   margin-bottom: 30px;
   color: #9067b4;}
+  /* Service section content styling */
+.services-container h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #9067b4;
+text-align: center;}
 
 .service-box {
   background-color: #fff;
