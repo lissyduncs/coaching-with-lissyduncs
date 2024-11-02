@@ -88,11 +88,19 @@ header {
 .topnav a:hover {
   color: rgb(70, 54, 80);
   background-color: #cfb8f1;
+  border: 3px solid rgba(217, 206, 232, 0.6); /* Lighter border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
 }
 
 .topnav a.active {
   background-color: rgb(152, 153, 207);
   color: rgb(237, 230, 241);
+  /* Border and shadow */
+  border: 3px solid rgba(132, 123, 145, 0.6); /* Lighter border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* X-offset, Y-offset, blur-radius, color */
+    
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
 .hamburger {
